@@ -335,6 +335,9 @@ body.opened .stilzo_tm_topbar{
 	color:rgb(255, 255, 255);
 	text-decoration: none;
 }
+#o-color{
+	color:rgb(56, 69, 255);
+}
 .stilzo_tm_topbar .menu{
 	display: flex;
 	align-items: center;
@@ -382,10 +385,10 @@ body.opened .stilzo_tm_topbar{
 }
 
 .contact_button{
-	background-color: rgb(61, 47, 255);
+	/* background-color: rgb(61, 47, 255); */
 	padding: 7px 20px;
 	border-radius: 10px;
-	color:rgb(255, 255, 255);
+	border: 2px solid rgb(61, 47, 255);
 }
 
 .contact_button a{
@@ -546,7 +549,8 @@ body.opened .stilzo_tm_hero .content .left{
 	margin-bottom: 16px;
 	color: #ff4522;
 	font-family: "Poppins";
-	font-weight: 500;
+	font-weight: 700;
+	font-size: 17px;
 }
 .stilzo_tm_hero .job{
 	font-size: 45px;
@@ -679,6 +683,7 @@ body.opened .stilzo_tm_hero .content .left{
 	overflow: hidden;
 	padding: 50px;
 	overflow-y: scroll;
+	background: rgb(255, 255, 255);
 }
 .stilzo_tm_hero .popup_informations{
 	opacity: 0;
@@ -747,6 +752,10 @@ body.opened .stilzo_tm_hero .content .left{
   border-radius: 6px;
   border: 3px solid #fff;
 }
+
+.about_me{
+	margin-bottom: 25px;
+} 
 .stilzo_tm_hero .short_info{
 	width: 100%;
 	height: auto;
@@ -771,6 +780,7 @@ body.opened .stilzo_tm_hero .content .left{
 .stilzo_tm_hero .short_info ul li h3{
 	font-size: 45px;
 	font-weight: 600;
+	color:rgb(94, 218, 207);
 }
 .stilzo_tm_hero .short_info ul li span{
 	font-family: "Poppins";
@@ -789,6 +799,7 @@ body.opened .stilzo_tm_hero .content .left{
 	opacity: 0;
 	visibility: hidden;
 	top: 20px;
+	right: 50px;
 	
 	-webkit-transition: all .4s ease;
 	   -moz-transition: all .4s ease;
@@ -831,7 +842,7 @@ body.opened .stilzo_tm_hero .content .right{
 body.opened .stilzo_tm_hero .content .right .image .main{
 	animation-name: right-image-main;
 	animation-duration: 1s;
-	transform: rotate(5deg);
+	transform: rotate(0deg);
 }
 
 @keyframes right-image-main{
@@ -839,15 +850,15 @@ from{
 	transform: rotate(30deg);
 }
 to{
-	transform: rotate(5deg);
+	transform: rotate(0deg);
 }
 }
 
 .stilzo_tm_hero .content .right .image .shape{
 	position: absolute;
-	top: 23px;
+	top: 45px;
 	bottom: -23px;
-	left: -95px;
+	left: -85px;
 	width: 90%;
 	background-color: #ff4522;
 	transform: rotate(0deg);
@@ -863,7 +874,7 @@ to{
 body.opened .stilzo_tm_hero .content .right .image .shape{
 	animation-name: right-image-shape;
 	animation-duration: 1s;
-	transform: rotate(-2deg);
+	transform: rotate(0deg);
 } 
 
 @keyframes right-image-shape{
@@ -872,7 +883,7 @@ body.opened .stilzo_tm_hero .content .right .image .shape{
 		transform: translate3d(-200px, 0,0);
 	}
 	to{
-		transform: rotate(-2deg);
+		transform: rotate(0deg);
 		transform: translate3d(0, 0,0);
 	}
 	}
@@ -956,6 +967,9 @@ body.opened .stilzo_tm_hero .down{
 	float: left;
 	padding-top: 92px;
 }
+.swiper-slide{
+	margin-right: 20px;
+}
 .stilzo_tm_portfolio .portfolio_list .list_inner{
 	width: 100%;
 	height: auto;
@@ -968,7 +982,9 @@ body.opened .stilzo_tm_hero .down{
 .stilzo_tm_portfolio .portfolio_list .image img{
 	position: relative;
 	min-width: 100%;
-	opacity: 0;
+	border-radius: 12px;
+	height: 400px;
+	/* opacity: 0; */
 }
 .stilzo_tm_portfolio .portfolio_list .image .main{
 	position: absolute;
@@ -1165,22 +1181,7 @@ body.opened .stilzo_tm_hero .down{
 	overflow: hidden;
 	margin-bottom: 37px;
 }
-.stilzo_tm_modalbox .popup_details .top_image img{
-	position: relative;
-	min-width: 100%;
-	opacity: 0;
-}
-.stilzo_tm_modalbox .popup_details .top_image .main{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	border-radius: 10px;
-}
+
 .stilzo_tm_modalbox .portfolio_main_title{
 	width: 100%;
 	float: left;
@@ -1281,8 +1282,8 @@ body.opened .stilzo_tm_hero .down{
 	position: relative;
 }
 .stilzo_tm_modalbox .additional_images ul li .my_image img{
-	opacity: 0;
-	min-width: 100%;
+	border-radius: 12px;
+	max-width: 90%;
 }
 .stilzo_tm_modalbox .additional_images ul li .my_image .main{
 	position: absolute;
@@ -1422,10 +1423,10 @@ padding-bottom: 0;
 @keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
 
 .stilzo_tm_skills .right{
-	width: 40%;
+	width: 35%;
 	position: absolute;
 	right: 0px;
-	top: 0px;
+	top: 40px;
 	bottom:-220px;
 }
 .stilzo_tm_skills .my_video{
@@ -1444,6 +1445,10 @@ padding-bottom: 0;
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size: cover;
+}
+.my_image.jarallax img{
+border-radius: 12px;
+opacity: 0.4;
 }
 .stilzo_tm_skills .right[data-background-style="video"] .my_image{display: none;}
 .stilzo_tm_skills .right[data-background-style="image"] .my_video{display: none;}
@@ -1555,7 +1560,7 @@ padding-bottom: 0;
 	position: relative;
 	background-color: #fff;
 	box-shadow: 0px 0px 20px rgba(0,0,0,.08);
-	border-radius: 10px;
+	border-radius: 0px;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -1602,179 +1607,6 @@ padding-bottom: 0;
 .stilzo_tm_pricing .right ul li .list_inner:hover .svg{
 	color: #fff;
 }
-
-/*---------------------------------------------------*/
-/*	09) stilzo NEWS
-/*---------------------------------------------------*/
-
-.stilzo_tm_news{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding: 140px 0px 140px 0px;
-}
-.stilzo_tm_news .news_list{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding-top: 92px;
-}
-.stilzo_tm_news .news_list .list_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.stilzo_tm_news .news_list .image{
-	position: relative;
-}
-.stilzo_tm_news .news_list .image img{
-	position: relative;
-	min-width: 100%;
-	opacity: 0;
-}
-.stilzo_tm_news .news_list .image .main{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size: cover;
-	border-radius: 10px;
-}
-.stilzo_tm_news .news_list .overlay{
-	position: absolute;
-	top: 10px;
-	bottom: 10px;
-	left: 10px;
-	right: 10px;
-	background-color: #fff;
-	border-radius: 10px;
-	z-index: 1;
-	opacity: 0;
-	visibility: hidden;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.stilzo_tm_news .news_list .list_inner:hover .overlay{
-	opacity: 1;
-	visibility: visible;
-}
-.stilzo_tm_news .news_list .details{
-	position: absolute;
-	z-index: 2;
-	bottom: 0px;
-	left: 0px;
-	padding: 0px 40px 45px 49px;
-	opacity: 0;
-	visibility: hidden;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.stilzo_tm_news .news_list .list_inner:hover .details{
-	opacity: 1;
-	visibility: visible;
-}
-.stilzo_tm_news .news_list .details h3{
-	font-size: 20px;
-	font-weight: 700;
-}
-.stilzo_tm_news .news_list .details span{
-	font-family: "Poppins";
-	margin-bottom: 6px;
-	display: inline-block;
-}
-.stilzo_tm_news .news_list .list_inner .svg{
-	position: absolute;
-	top: 40px;
-	right: 39px;
-	width: 50px;
-	height: 50px;
-	z-index: 2;
-	transform: rotate(-50deg);
-	color: #000;
-	opacity: 0;
-	visibility: hidden;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.stilzo_tm_news .news_list .list_inner:hover .svg{
-	opacity: 1;
-	visibility: visible;
-}
-.stilzo_tm_news .news_hidden_details{
-	display: none;
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-	z-index: -11;
-}
-.stilzo_tm_modalbox .news_popup_informations{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.stilzo_tm_modalbox .news_popup_informations .image{
-	position: relative;
-	margin-bottom: 37px;
-}
-.stilzo_tm_modalbox .news_popup_informations .image img{
-	position: relative;
-	opacity: 0;
-	min-width: 100%;
-}
-.stilzo_tm_modalbox .news_popup_informations .image .main{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	border-radius: 10px;
-}
-.stilzo_tm_modalbox .news_popup_informations .details{
-	width: 100%;
-	float: left;
-	margin-bottom: 20px;
-}
-.stilzo_tm_modalbox .news_popup_informations .details span{
-	display: inline-block;
-	margin-bottom: 7px;
-}
-.stilzo_tm_modalbox .news_popup_informations .details h3{
-	font-size: 22px;
-	font-weight: 700;
-}
-.stilzo_tm_modalbox .news_popup_informations .text{
-	width: 100%;
-	float: left;
-}
-.stilzo_tm_modalbox .news_popup_informations .text p{
-	margin-bottom: 15px;
-}
-.stilzo_tm_modalbox .news_popup_informations .text p:last-child{
-	margin-bottom: 0px;
-}
-
 /*---------------------------------------------------*/
 /*	10) stilzo CONTACT
 /*---------------------------------------------------*/
@@ -1798,6 +1630,7 @@ padding-bottom: 0;
 .stilzo_tm_contact .left{
 	width: 50%;
 	padding-right: 100px;
+	border-right: 0.75px solid rgb(104, 104, 104);
 }
 .stilzo_tm_contact .left .text{
 	width: 100%;
@@ -1868,6 +1701,7 @@ padding-bottom: 0;
 	width: 100%;
 	border: 1px solid rgba(0,0,0,.1);
 	background-color: transparent;
+	border-radius: 12px;
 }
 .stilzo_tm_contact .fields ul li input:focus{
 	outline: none;
@@ -1880,6 +1714,7 @@ padding-bottom: 0;
 	resize: none;
 	margin-bottom: 20px;
 	background-color: transparent;
+	border-radius: 12px;
 }
 .stilzo_tm_contact .fields .last textarea:focus{
 	outline: none;
@@ -1918,6 +1753,7 @@ padding-bottom: 0;
     padding: 8px 20px;
     position: relative;
 	background-color: #ff4522;
+	border-radius: 12px;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -2062,7 +1898,8 @@ padding-bottom: 0;
 	.stilzo_tm_mobile_menu{display: block;}
 	.stilzo_tm_hero{padding: 150px 0px 120px 0px;}
 	.stilzo_tm_hero .content{flex-direction: column-reverse;justify-content: space-around;align-items: baseline;}
-	.stilzo_tm_hero .content .right{padding-left: 0px;margin-bottom: 60px;width: 100%;}
+	.stilzo_tm_hero .content .right{padding-left: 0px;margin-bottom: 60px;width: 100%;    position: relative;
+		left: 0px;}
 	.stilzo_tm_hero .content .left{padding-right: 0px;width: 100%;}
 	.stilzo_tm_hero .content .right .image .shape{display: none;}
 	.stilzo_tm_hero .content .right .image .main{transform: rotate(0deg);}

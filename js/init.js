@@ -480,7 +480,7 @@ function stilzo_tm_swiper(){
 			spaceBetween: 0,
 			loopAdditionalSlides: 1,
 			autoplay: {
-				delay: 6000,
+				delay: 11000,
 			},
 			
 			navigation: {
